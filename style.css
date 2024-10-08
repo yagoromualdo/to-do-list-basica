@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Fundo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    background: white;
+    padding: 30px; /* Aumentando o preenchimento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    width: 600px; /* Aumentando a largura do card */
+    transition: box-shadow 0.3s; /* Transição suave na sombra */
+}
+
+.todo-container:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px; /* Adicionando margem abaixo do título */
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px; /* Aumentando a margem abaixo do campo de entrada */
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px;
+}
+
+button {
+    margin-left: 10px;
+    width: 150px;
+    padding: 12px; /* Aumentando o preenchimento do botão */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Transição suave na cor de fundo */
+    margin-bottom: 10px; /* Adicionando margem abaixo dos botões */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px; /* Margem superior */
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Linha divisória */
+    transition: background-color 0.3s; /* Transição suave na cor de fundo */
+}
+
+li:hover {
+    background-color: #f8f9fa; /* Cor ao passar o mouse */
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #aaa; /* Cor de texto para tarefas concluídas */
+}
+
+#addTaskBtn {
+    width: 100%;
+}
